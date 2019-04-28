@@ -1,0 +1,54 @@
+-- MySQL dump 10.13  Distrib 5.7.25, for Linux (x86_64)
+--
+-- Host: localhost    Database: android
+-- ------------------------------------------------------
+-- Server version	5.7.25-0ubuntu0.18.04.2
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `seat`
+--
+
+DROP TABLE IF EXISTS `seat`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `seat` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `timetable_id` int(11) NOT NULL,
+  `seat_row` int(11) NOT NULL,
+  `seat_column` int(11) NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=135 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `seat`
+--
+
+LOCK TABLES `seat` WRITE;
+/*!40000 ALTER TABLE `seat` DISABLE KEYS */;
+INSERT INTO `seat` VALUES (37,9,1,1,0),(38,9,1,2,1),(39,9,1,3,1),(40,9,1,4,1),(41,9,1,5,1),(42,9,1,6,1),(43,9,1,7,0),(44,9,2,1,0),(45,9,2,2,0),(46,9,2,3,0),(47,9,2,4,0),(48,9,2,5,1),(49,9,2,6,0),(50,9,2,7,0),(51,9,3,1,0),(52,9,3,2,0),(53,9,3,3,0),(54,9,3,4,1),(55,9,3,5,1),(56,9,3,6,0),(57,9,3,7,0),(58,9,4,1,0),(59,9,4,2,1),(60,9,4,3,1),(61,9,4,4,0),(62,9,4,5,0),(63,9,4,6,0),(64,9,4,7,0),(65,9,5,1,0),(66,9,5,2,0),(67,9,5,3,0),(68,9,5,4,0),(69,9,5,5,0),(70,9,5,6,0),(71,9,5,7,0),(72,9,6,1,0),(73,9,6,2,0),(74,9,6,3,0),(75,9,6,4,0),(76,9,6,5,0),(77,9,6,6,0),(78,9,6,7,0),(79,9,7,1,0),(80,9,7,2,0),(81,9,7,3,0),(82,9,7,4,0),(83,9,7,5,0),(84,9,7,6,0),(85,9,7,7,0),(86,10,1,1,1),(87,10,1,2,1),(88,10,1,3,0),(89,10,1,4,0),(90,10,1,5,0),(91,10,1,6,0),(92,10,1,7,0),(93,10,2,1,0),(94,10,2,2,0),(95,10,2,3,0),(96,10,2,4,0),(97,10,2,5,0),(98,10,2,6,0),(99,10,2,7,0),(100,10,3,1,0),(101,10,3,2,0),(102,10,3,3,0),(103,10,3,4,0),(104,10,3,5,0),(105,10,3,6,0),(106,10,3,7,0),(107,10,4,1,0),(108,10,4,2,0),(109,10,4,3,0),(110,10,4,4,0),(111,10,4,5,0),(112,10,4,6,0),(113,10,4,7,0),(114,10,5,1,0),(115,10,5,2,0),(116,10,5,3,0),(117,10,5,4,0),(118,10,5,5,0),(119,10,5,6,0),(120,10,5,7,0),(121,10,6,1,0),(122,10,6,2,0),(123,10,6,3,0),(124,10,6,4,0),(125,10,6,5,0),(126,10,6,6,0),(127,10,6,7,0),(128,10,7,1,0),(129,10,7,2,0),(130,10,7,3,0),(131,10,7,4,0),(132,10,7,5,0),(133,10,7,6,0),(134,10,7,7,0);
+/*!40000 ALTER TABLE `seat` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2019-04-28 22:39:08
