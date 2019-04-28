@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FilmDetail"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_filmpost"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/movie1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:orientation="vertical"
+        android:background="@drawable/linearlayout_frame">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_filmdetail"
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+                android:src="@drawable/movie1"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_filmname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="22sp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/tv_filmdirector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="by Director"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_filmtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type / Type"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_rating"
+                    android:text="9.8"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/rating_background"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_star_black_24dp"
+                    android:paddingRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/tv_actor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chen yuqi, Zhu xudan"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout_filmdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabTextColor="#808080"
+            app:tabSelectedTextColor="#000"
+            android:layout_marginTop="10dp"
+            app:tabIndicatorColor="@color/tabindicatorcolor"
+            android:background="#fff" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_filmdetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

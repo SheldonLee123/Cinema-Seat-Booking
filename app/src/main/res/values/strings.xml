@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CinemaDemo</string>
+    <string name="title_home">Home</string>
+    <string name="title_film">Film</string>
+    <string name="title_mine">Mine</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="long_text">Captain Marvel is an extraterrestrial Kree warrior who finds herself caught in the middle of an intergalactic battle between her people and the Skrulls. Living on Earth in 1995, she keeps having recurring memories of another life as U.S. Air Force pilot Carol Danvers. With help from Nick Fury, Captain Marvel tries to uncover the secrets of her past while harnessing her special superpowers to end the war with the evil Skrulls.</string>
+    <string name="movie_review">The second major Hollywood movie to feature a female superhero at its center, but it is a savier and more high-flying fantasy than Wonder Woman, because it is the origin story as head game.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

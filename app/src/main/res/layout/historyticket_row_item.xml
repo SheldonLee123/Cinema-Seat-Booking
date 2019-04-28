@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:weightSum="100"
+    android:id="@+id/parent_layout_ticket">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="17"
+        android:background="@drawable/linearlayout_ticketleft"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/seat" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/vertical_dash"
+        android:layerType="software" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="83"
+        android:background="@drawable/linearlayout_ticketright"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="75"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_filmname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avengers4 1Ticket"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_filmtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2019-4-26 21:00"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Chengdu ATCO  Dream Cinema"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_rate"
+                android:text="Rate"
+                android:textAllCaps="false"
+                android:textColor="@color/button_rate"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk">
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="right"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.example.sheldon.cinemademo.CircleImageView
+            android:id="@+id/head_portrait"
+            android:layout_width="match_parent"
+            android:layout_marginRight="110dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_logo_black_24dp" />
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar"
+        android:fontFamily="@font/calibri"
+        android:gravity="center"
+        android:text="Today's Favor"
+        android:textSize="40dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:icvp_interpolator="@android:anim/accelerate_decelerate_interpolator"
+        app:icvp_scroll_duration="250"
+        app:icvp_center_page_scale_offset="30dp"
+        app:icvp_min_page_scale_offset="5dp"
+        app:icvp_max_page_scale="0.8"
+        app:icvp_min_page_scale="0.55"
+        app:icvp_medium_scaled="false"
+        android:layout_below="@+id/textview1">
+
+    </com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager>
+
+</RelativeLayout>

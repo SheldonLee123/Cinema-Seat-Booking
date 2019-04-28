@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.PayOrder">
+
+        <LinearLayout
+            android:id="@+id/first_layout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/calibri"
+                android:text="Payment remaining time 10:00"
+                android:textColor="@color/grey"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_totalprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/calibri"
+                android:text="$ 33.00"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/calibri"
+                android:text="Order number：2016110194"
+                android:textColor="@color/grey"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/first_layout">
+
+            <RadioGroup
+                android:id="@+id/sex_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <RadioButton
+                    android:id="@+id/rb_creaditcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@drawable/creditcard"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:text="Creadit Card"
+                    android:textSize="24sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/deepgrey" />
+
+                <RadioButton
+                    android:id="@+id/rb_wechat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@drawable/wechat"
+                    android:drawablePadding="5dp"
+                    android:padding="5dp"
+                    android:text="Wechat Pay"
+                    android:textSize="24sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/deepgrey" />
+
+                <RadioButton
+                    android:id="@+id/rb_alipay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@drawable/alipay"
+                    android:drawablePadding="5dp"
+                    android:padding="5dp"
+                    android:text="AliPay"
+                    android:textSize="24sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/deepgrey" />
+
+                <RadioButton
+                    android:id="@+id/rb_bankcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@drawable/bank"
+                    android:drawablePadding="5dp"
+                    android:padding="5dp"
+                    android:text="Bank Card"
+                    android:textSize="24sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/deepgrey" />
+
+                <RadioButton
+                    android:id="@+id/rb_balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@drawable/balance"
+                    android:drawablePadding="5dp"
+                    android:padding="5dp"
+                    android:text="Balance"
+                    android:textSize="24sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/deepgrey" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirmpay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:text="Comfirm to Pay"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/btn_choose_ticket"/>
+
+</RelativeLayout>
